@@ -1,1 +1,84 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+}
 
+h1 {
+  margin: 25px;
+  text-align: center;
+  font-size: 175%;
+}
+
+div {
+  margin: 2%;
+  border: 1px solid black;
+  position: relative;
+  float: left;
+  overflow: auto;
+}
+
+#div1 {
+  background-color: #e1e7ec;
+}
+
+#div2 {
+  background-color: #50a8f0;
+}
+
+#div3 {
+  background-color: #c52e2e;
+}
+
+p {
+  width: 90%;
+  margin: auto; 
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+#section_title {
+  background-color: rgb(229, 188, 40);
+  color: white;
+  border: 1px solid white;
+  width: 130px;
+  text-align: center;
+  font-size: 125%;
+  top: 0%;
+  right: 0%;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #div1, #div2, #div3 {
+    width: 29.33%;
+    height: 180px;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #div1, #div2 {
+    width: 46%;
+    height: 180px;
+  }
+
+  #div3 {
+    width: 96%;
+    height: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  #div1, #div2, #div3 {
+    width: 96%;
+    height: 180px;
+  }
+}
